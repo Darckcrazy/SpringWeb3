@@ -39,7 +39,8 @@ public class BlogsService {
         blogpost.setContent(payload.getContent());
         blogpost.setReadingTime(payload.getReadingTime());
         blogpost.setAuthor(author);
-        blogpost.setCategory("General"); // Default category
+        blogpost.setCategory(payload.getCategory() != null ? payload.getCategory() : "General");
+        blogpost.setCover(payload.getCover());
         
         return save(blogpost);
     }

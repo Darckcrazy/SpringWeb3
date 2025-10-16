@@ -118,3 +118,4 @@ Make sure PostgreSQL is running with:
 - **Relationship Management**: Proper JPA relationships between Author and Blogpost
 - **Error Handling**: Comprehensive error handling with proper HTTP status codes
 - **Pagination**: Efficient pagination with sorting for large datasets
+
